@@ -1,0 +1,200 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: AUM_student_ID
+  examples:
+    -What should I do if I lose my ID?
+    -Are there any fees for issuing a replacement for a lost ID?
+    -What if I lose my ID more than once?
+    -can someone take my ID and enter the campus with it?
+
+- intent: AUM_clinic
+  examples:
+    -Is there a central clinic in AUM?
+    -Where is the AUM Central Clinic located?
+    -What services does the clinic provide?   
+
+- intent: AUM_email_for_the_university_student
+  examples:
+   -Is there any way to communicate between the student and the university?
+   -How can I change the password for my email?
+
+- intent: class_standing
+  examples:
+   -If I'm a freshman,what is the total number of hours i have earned and the minimum GPA required?
+   -If I'm a sophomore,what is the total number of hours i have earned and the minimum GPA required?
+   -If I'm a junior,what is the total number of hours i have earned and the minimum GPA required?
+   -If I'm a senior,what is the total number of hours i have earned and the minimum GPA required?
+
+- intent: graduation_with_honors
+  examples:
+   -How can I graduate with honors?
+   -Are there criteria for graduating with honors?
+   -Can I graduate with honors if I get a grade less than C?
+   -What is the cumulative GPA required to graduate with honors?
+   -If I committed conduct violation, can I graduate with honors?
+
+- intent: about_AUM
+  examples:
+    -I want to know more about the AUM?
+    -How many colleges does the AUM include?
+    -What distinguishes the AUM?
+
+- intent: changing_major_from_business_to_engineering
+  examples:
+   -Can I change my major?
+   -What are the requirements for changing majors from business administration to engineering?
+   -What is the total credit limit for changing majors?
+   -What is the GPA required to change major?
+
+- intent: writing_lab
+  examples:
+   -What is the writing lab at AUM?
+   -Is the writing lab for all students?
+   -Does the writing lab help me if I have a presentation or other projects?
+   -How can I contact the writing lab?
+
+- intent: AUM_registration
+  examples:
+   -How can I register courses?
+   -Can I register less than 12 credits?
+   -What is the minimum credits that I must register for the course?
+   -When can I add or drop the course?
+   -Can I add a course after the end of the add and drop period?
+   -Can I change the section?
+   -If I have a subject on academic probation,how many credits can I register?
+
+- intent: final_exam
+  examples:
+   -how can i chech my final exam shedule?
+   -i want to know what to do if i miss the final exam?
+   -where can i submit the paperwork to apply for final makeup?
+   -what should i bring for the final exam?
+   -how do i find the final exam location?
+   -can i enter the final exam if iam late?
+
+- intent: AUM_library
+  examples:
+   -Is there a library at the university?
+   -When does the library open?
+   -Will the library be open during Ramadan?
+   -How can we contact the library?
+   -How can I request a book that is not available in the library's catalog?
+   -Are there any upcoming events or workshops hosted by the library that can help me improve my research and study skills?
+   -What are the library's policies regarding borrowing materials, including loan periods, renewal options, and any associated fees or fines?
+
+- intent: AUM_restaurant
+  examples:
+   -Are there restaurants on campus?
+   
+- intent: ATM_service
+  examples:
+   -Is there an ATM service at the university?
+
+- intent: tawteen_career_center
+  examples:
+   -What services does the Tawteen Career Center offer to help students?
+
+- intent: emergency_cases
+  examples:
+   -What should I do if I have an accident in a parking area?
+  
+- intent: AUM_major
+  examples:
+   -What are the majors available at the university?
+  
+- intent: computer_engineering
+  examples:
+   -What is computer engineering, and how is it different from other engineering fields?
+   -What kind of courses will I take as a computer engineering student?
+   -Are there any clubs or organizations specifically for computer engineering students?
+   -Are there any networking events or career fairs specifically for computer engineering students? 

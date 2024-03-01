@@ -1,0 +1,108 @@
+rules:
+
+- rules: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- rules: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- rules: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- rules: student ID
+  steps:
+  - intent: AUM_student_ID
+  - action: utter_AUM_student_ID
+
+- rules: ask about clinic
+  steps:
+  - intent: AUM_clinic
+  - action: utter_AUM_clinic
+
+- rules: ask about AUM email for the university student
+  steps:
+  - intent: AUM_email_for_the_university_student
+  - action: utter_AUM_email_for_the_university_student
+
+- rules: ask about class standing
+  steps:
+  - intent: class_standing
+  - action: utter_class_standing
+
+- rules: ask about graduation with honors
+  steps:
+  - intent: graduation_with_honors
+  - action: utter_graduation_with_honors
+
+- rules: ask about AUM 
+  steps:
+  - intent: about_AUM
+  - action: utter_about_AUM
+
+- rules: ask about changing major from business to engineering
+  steps:
+  - intent: changing_major_from_business_to_engineering
+  - action: utter_changing_major_from_business_to_engineer
+
+- rules: ask about writing lab
+  steps:
+  - intent: writing_lab
+  - action: utter_writing_lab
+
+- rules: :ask about registration
+  steps:
+  - intent: AUM_registration
+  - action: utter_AUM_registration
+
+- rules: final exam
+  steps:
+  - intent: final_exam
+  - action: utter_final_exam
+
+- rules: AUM library
+  steps:
+  - intent: AUM library
+  - action: utter_AUM library
+
+- rules: AUM restaurant
+  steps:
+  - intent: AUM_restaurant 
+  - action: utter_AUM_restaurant
+
+- rules: ATM service
+  steps:
+  - intent: ATM_service
+  - action: utter_ATM_service
+
+- rules: tawteen career center
+  steps:
+  - intent: tawteen_career_center
+  - action: utter_tawteen_career_center
+
+- rules: emergency_cases
+  steps:
+  - intent: emergency_cases
+  - action: utter_emergency_cases
+
+- rules: AUM major
+  steps:
+  - intent: AUM_major
+  - action: utter_AUM_major

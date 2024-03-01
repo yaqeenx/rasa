@@ -1,0 +1,142 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - AUM_student_ID
+  - AUM_clinic
+  - AUM_email_for_the_university_student
+  - class_standing
+  - graduation_with_honors
+  - bout_AUM 
+  - changing_major_from_business_to_engineering
+  - writing_lab
+  - AUM_registration
+  - final_exam
+  - AUM_library
+  - AUM_restaurant
+  - ATM_service
+  - tawteen_career_center
+  - emergency_cases
+  - AUM_major
+  - computer_engineering
+
+slots:
+  name:
+   type: text
+   influence_conversation: true 
+   mappings: 
+   - type: from_entity
+     entity: name 
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_AUM_student_ID:
+  - text: "If you lose your ID, you must obtain a replacement by contacting Student Affairs"
+  - text: "There is a fee of 5 KD to issue a replacement for a lost ID"
+  - text: "In the event that the ID is lost more than twice, the student will be issued a written warning"
+  - text: "Failure to display the ID or its use by unauthorized persons constitutes a violation of the universityâ€™s rules and regulations"
+ 
+  utter_AUM_clinic:
+  - text: "There is a central clinic on campus"
+  - text: "AUM central is located in the middle of the campus,near the colleges of Business administration and Engineering and Technology"
+  - text: "The clinic provides first aid services and medications when needed, for example, painkillers"
+
+  utter_AUM_email_for_the_university_student:
+  - text: "The method of communication is to create a private e-mail for each student, to provide him with attendance and absence information, as well as university activities."
+  - text: "you can change your password by visiting AUM portal>Downloads>change password"
+
+  utter_class_standing:
+  - text: "the total credits earned for freshman from 0 to 30, the minimum required GPA is 1.6"
+  - text: "the total credits earned for sophomore from 31 to 60, the minimum required GPA is 1.8"
+  - text: "the total credits earned for junior from 61 to 90, the minimum required GPA is 2"
+  - text: "the total credits earned for senior from 90 or above, the minimum required GPA is 2"
+
+  utter_graduation_with_honors:
+  - text: "You must complete all graduation criteria"
+  - text: "You must obtain a cumulative GPA 3.5 or more upon graduation"
+  - text: "The grade for any course must not be less than c during study in AUM"
+  - text: "The student must not have committed any behavioral violation while studying at AUM"
+
+  utter_about_AUM:
+  - text: "The American University of the Middle East is a leading higher education institution established in 2005 in Kuwait. AUM has two colleges: the College of Engineering and Technology and the College of Business Administration, in addition to a Liberal Arts Department and an English Preparatory Program."
+  - text: "AUM has two colleges:the College of Engineering and Technology and the College of Business Administration"
+
+  utter_changing_major_from_business_to_engineering:
+  - text: "you should be a graduate of science major in high school"
+  - text: "you should have complete between 24 and 75 in you current major "
+  - text: "you should have a cumulative GPA not lesser than 3.0"
+  - text: "you should pass' MAT150 ' with minimum grade of B+"
+
+  utter_writing_lab:
+  - text: "The writing lab is an open space for all students where they are free to discuss any questions or concerns"
+  - text: "The Writing Lab provides support to AUM students for assignments, projects, presentations, essays, capstone projects or other research papers"
+  - text: "You can contact the Writing Lab by sending an email to writinglab@aum.edu.kw"
+
+  utter_AUM_registration:
+  - text: "You can register for courses online before the beginning of each semester through the Banner"
+  - text: "You must register with at least 12 credit cards in each semester (except summer semester)"
+  - text: "You are allowed to add and drop and change the section during the add/drop period"
+  - text: "If you have a subject on academic probation may only register for 12 credits"
+
+  utter_final_exam:
+  - text: "you can check your Final Exam Schedule by visiting AUM Portal -> Student Links -> Final Assessments Schedule"
+  - text: "you missed your final exam for any critical reason, you can apply for a makeup by visiting AUM Portal -> Student Requests -> Makeup"
+  - text: "you have to submit the complete set of paper work at the time of Makeup submission by visiting AUM Portal -> Student Links -> Final Assessments Schedule"
+  - text: "you must bring your ID for the final exam"
+  - text: "you cannot enter your Final Exam if you are late for 45 minutes or more"
+
+  utter_AUM_library:
+  - text: "Yes, there is a library at AUM that supports the various study programs offered by the College of Business and the College of Engineering and Technology as well as the Department of Liberal Arts."
+  - text: "The Library is open from Sunday through Thursday from 8.00 AM to 8.00 PM."
+  - text: "The library is open during the month of Ramadan, but hours are modified"
+  - text: "The Library staff is available to answer questions or provide assistance to faculty, students, and staff via the Help Desk or by Email: Library.Support@aum.edu.kw"
+
+  utter_AUM_restaurant:
+  - text: "AUM includes a variety of restaurants inside the engineering building and the business administration building"
+
+  utter_ATM_service:
+  - text: :"There is an ATM service on campus in the Engineering Building"
+ 
+  utter_tawteen_career_center:
+  - text: "AUM includes a tawteen career center that provides training and guidance services to students through lectures and workshops"
+  
+  utter_emergency_cases:
+  - text: "If you are exposed to an accident or injury, you must inform university security or call the clinic"
+
+  utter_AUM_major:
+  - text: "Some majors that may be available in the College of Engineering:Mechanical Engineering,Electrical Engineering,Civil Engineering,Chemical Engineering,Industrial Engineering"
+ 
+
+  utter_computer_engineering:
+  - text: "Computer engineering combines elements of electrical engineering and computer science. It focuses on the design, development and implementation of computer systems and technologies, including hardware and software aspects. Unlike other engineering fields such as mechanical or civil engineering, which deal primarily with physical systems"
+  - text: "As a computer engineering student, you will take courses in both computer science and electrical engineering. You will study topics such as programming, digital systems, circuits and algorithms, computer architecture and software engineering"
+  - text: "Our university offers many clubs and organizations for computer engineering students through workshops and seminars"
+  - text: "our university hosts networking events and career fairs specifically tailored for computer engineering students. These events provide valuable opportunities for students to interact with potential employers, and alumni working in the field of computer engineering"
+
+sesion_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true 
